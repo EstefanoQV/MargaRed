@@ -118,7 +118,8 @@ p{
 
 .h2-login1 {
     background: linear-gradient(to right, #FCA311, #FFD548); 
-    -webkit-background-clip: text; 
+    background-clip: text; /* Propiedad estándar */
+    -webkit-background-clip: text; /* Prefijo para Safari */
     -webkit-text-fill-color: transparent; 
     font-size: 35px;
     font-family: sans-serif;
