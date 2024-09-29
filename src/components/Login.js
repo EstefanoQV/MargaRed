@@ -11,7 +11,7 @@ const Login = () => {
         e.preventDefault();
         
         if (username === 'admin' && password === 'margared') {
-            navigate('/employees'); // Redirige a la lista de empleados
+            navigate('/dashboard'); // Redirige a la lista de empleados
         } else {
             alert('Usuario o contraseña incorrectos');
         }
@@ -19,6 +19,7 @@ const Login = () => {
 
     return (
         <div className="login-page">
+            
             <div className="login-content">
                 <div className="login-image">
                     <img src="login.png" alt="Imagen de login" />

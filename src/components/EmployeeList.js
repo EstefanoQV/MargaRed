@@ -52,8 +52,7 @@ const EmployeeList = () => {
                                     <th className="name-column">Nombre</th>
                                     <th className="date-column">Fecha de Ingreso</th>
                                     <th className="workerType-column">Tipo de Trabajador</th>
-                                    <th className="position-column">Cargo</th>
-                                    <th className="area-column">Área</th>
+                                    <th className="machine-column">Máquina Asignada</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -63,8 +62,9 @@ const EmployeeList = () => {
                                         <td className="name-column1">{employee.name}</td>
                                         <td className="date-column1">{employee.entryDate}</td>
                                         <td className="workerType-column1">{employee.workerType}</td>
-                                        <td className="position-column1">{employee.position}</td>
-                                        <td className="area-column1">{employee.area}</td>
+                                        <td className="machine-column1">
+                                            {employee.assignedMachine ? employee.assignedMachine : ' '}
+                                        </td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -72,7 +72,7 @@ const EmployeeList = () => {
                     </div>
                 </main>
             </div>
-            {/* Agregar el modal aquí */}
+            {}
             <EmployeeModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
     );

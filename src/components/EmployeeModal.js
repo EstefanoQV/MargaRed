@@ -140,28 +140,6 @@ const EmployeeModal = ({ isOpen, onClose }) => {
                             required
                         /><br/><br/>
                     </div>
-                    <div className="input-group">
-                        <label className="label-add-position">Cargo:</label>
-                        <input
-                            className="input-position"
-                            type="text"
-                            placeholder="Cargo"
-                            value={position}
-                            onChange={(e) => setPosition(e.target.value)}
-                            required
-                        /><br/><br/>
-                    </div>
-                    <div className="input-group">
-                        <label className="label-add-area">Área:</label>
-                        <input
-                            className="input-area"
-                            type="text"
-                            placeholder="Área"
-                            value={area}
-                            onChange={(e) => setArea(e.target.value)}
-                            required
-                        /><br/><br/>
-                    </div>
                     <div className="button-group">
                     <button onClick={onClose} className="button-cancel">Cancelar</button>
                     <button type="submit">Guardar</button>
